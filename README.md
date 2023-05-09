@@ -62,15 +62,15 @@ The following table contains a list of interfaces that goes connected to the Ard
 | 74HC595      | Ground | Ground|
 
 ### Node-Red
-All Node-Red data is inside "flows node red.json" you might need to change the user and password for db connection.
+All Node-Red data is inside **"flows node red.json"** you might need to change the user and password for db connection.
 <br />
 Once Node-Red is installed run the following on the command prompt.
  >node-red 
  
 ### Sql database
-Database related data could be found inside "TrafficAdvertising.sql"
+Database related data could be found inside **"TrafficAdvertising.sql"**.
 <br />
 Please notice you need to create a db user and password or could use the other auth process. 
 
 ## Media and related data
-Photos related to project could be found inside "Media" folder
+Photos related to project could be found inside **"Media"** folder
