@@ -1,0 +1,38 @@
+Index: .idea/.idea.TrafficAdvertising.dir/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.TrafficAdvertising.dir/.idea/.gitignore b/.idea/.idea.TrafficAdvertising.dir/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1683626231234)
++++ b/.idea/.idea.TrafficAdvertising.dir/.idea/.gitignore	(date 1683626231234)
+@@ -0,0 +1,13 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Rider ignored files
++/.idea.TrafficAdvertising.iml
++/modules.xml
++/contentModel.xml
++/projectSettingsUpdater.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: .idea/.idea.TrafficAdvertising.dir/.idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.TrafficAdvertising.dir/.idea/encodings.xml b/.idea/.idea.TrafficAdvertising.dir/.idea/encodings.xml
+new file mode 100644
+--- /dev/null	(date 1683626206925)
++++ b/.idea/.idea.TrafficAdvertising.dir/.idea/encodings.xml	(date 1683626206925)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise" />
++</project>
+\ No newline at end of file
