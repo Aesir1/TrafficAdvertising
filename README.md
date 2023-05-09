@@ -3,7 +3,7 @@ A prototype for traffic advertising build with Arduino - NodeRed - SQL Database
 ![Project image](/Media/DSC_0218.JPG)
 
 
-## Project description
+## Project abstract
 This project has the goal of simulating data collection through sensors, persisting the information in a relational database and modeling the information in an accessible form as bar graphs.
 
 ## Requirements
