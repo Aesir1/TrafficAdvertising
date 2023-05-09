@@ -1,0 +1,691 @@
+[
+    {
+        "id": "9f87c0c941880bcb",
+        "type": "tab",
+        "label": "Traffic evaluation",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "48e13534de6b8f6e",
+        "type": "tab",
+        "label": "Traffic Statistics",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b88fe837b85bfb15",
+        "type": "tab",
+        "label": "Traffic Advertising",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4e45931027680cf8",
+        "type": "serial-port",
+        "serialport": "COM5",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "2fdd183a6aac89a0",
+        "type": "serial-port",
+        "serialport": "COM3",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "939330b975a616ea",
+        "type": "MSSQL-CN",
+        "name": "Traffic",
+        "server": "DESKTOP-9F23IQO",
+        "encyption": true,
+        "database": "TrafficAdvertising"
+    },
+    {
+        "id": "1457f36e1b6229f1",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD.MM.YYYY",
+            "sizes": {
+                "sx": 68,
+                "sy": 68,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "868ff60209e16657",
+        "type": "ui_tab",
+        "name": "TrafficAdvDashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "946e5525dc161df7",
+        "type": "ui_group",
+        "name": "Advertising output",
+        "tab": "868ff60209e16657",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a5e5b6068ae12efb",
+        "type": "ui_group",
+        "name": "Traffic Statistic",
+        "tab": "868ff60209e16657",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "59f4939de37fd8e6",
+        "type": "serial in",
+        "z": "9f87c0c941880bcb",
+        "name": "arduinoSerialIn",
+        "serial": "4e45931027680cf8",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "196b20426d372ffc"
+            ]
+        ]
+    },
+    {
+        "id": "196b20426d372ffc",
+        "type": "function",
+        "z": "9f87c0c941880bcb",
+        "name": "CheckData",
+        "func": "let myDate = Date.now();\nconst today = new Date(myDate).toISOString();\n\nconst motionSensor = {\n    LocationID : 1,\n    SensorID: 1,\n    RegisterDate : today\n}\n\nconst ultraSensor = {\n    LocationID : 2,\n    SensorID: 2,\n    RegisterDate : today\n}\n\nif(msg.payload.length >= 10)\n{\n    return motionSensor;\n    \n}\nif(msg.payload.length <=10)\n{\n    \n    return ultraSensor;    \n}\nelse{\n    return msg\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 220,
+        "wires": [
+            [
+                "e9f4392f5078ad66"
+            ]
+        ]
+    },
+    {
+        "id": "d8e44f30b5b9ad27",
+        "type": "MSSQL",
+        "z": "9f87c0c941880bcb",
+        "mssqlCN": "939330b975a616ea",
+        "name": "Insert Data",
+        "query": "",
+        "outField": "payload",
+        "x": 610,
+        "y": 380,
+        "wires": [
+            [
+                "b71f85474baebdf1"
+            ]
+        ]
+    },
+    {
+        "id": "b71f85474baebdf1",
+        "type": "debug",
+        "z": "9f87c0c941880bcb",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "e9f4392f5078ad66",
+        "type": "template",
+        "z": "9f87c0c941880bcb",
+        "name": "Quering",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "INSERT INTO TrafficCount(LocationID, SensorID, RegisterDate) VALUES ('{{LocationID}}', '{{SensorID}}', '{{RegisterDate}}');",
+        "output": "str",
+        "x": 460,
+        "y": 300,
+        "wires": [
+            [
+                "d8e44f30b5b9ad27"
+            ]
+        ]
+    },
+    {
+        "id": "d09127afaae754b6",
+        "type": "ui_date_picker",
+        "z": "48e13534de6b8f6e",
+        "name": "",
+        "label": "date",
+        "group": "a5e5b6068ae12efb",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 90,
+        "y": 60,
+        "wires": [
+            [
+                "73e8fa29c1a72597"
+            ]
+        ]
+    },
+    {
+        "id": "a5a6d2819a2debc4",
+        "type": "MSSQL",
+        "z": "48e13534de6b8f6e",
+        "mssqlCN": "939330b975a616ea",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 800,
+        "y": 320,
+        "wires": [
+            [
+                "310e15b23623ec69"
+            ]
+        ]
+    },
+    {
+        "id": "73e8fa29c1a72597",
+        "type": "moment",
+        "z": "48e13534de6b8f6e",
+        "name": "",
+        "topic": "",
+        "input": "",
+        "inputType": "msg",
+        "inTz": "",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "",
+        "locale": "",
+        "output": "",
+        "outputType": "msg",
+        "outTz": "",
+        "x": 280,
+        "y": 60,
+        "wires": [
+            [
+                "892e9245813ee923"
+            ]
+        ]
+    },
+    {
+        "id": "892e9245813ee923",
+        "type": "function",
+        "z": "48e13534de6b8f6e",
+        "name": "",
+        "func": "const dateWithTime = msg.payload;\nconst dateToQuery = dateWithTime.substring(0,10);\nmsg.payload = dateToQuery;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 220,
+        "wires": [
+            [
+                "075ffa7f2bc62417",
+                "31c212a7efba94d0",
+                "906ef3102b096591"
+            ]
+        ]
+    },
+    {
+        "id": "075ffa7f2bc62417",
+        "type": "template",
+        "z": "48e13534de6b8f6e",
+        "name": "Location1Query",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "SELECT COUNT(RegisterDate) \nFROM TrafficCount\nWHERE CONVERT(VARCHAR(25), RegisterDate, 126) LIKE '{{payload}}%' AND LocationID = 1;",
+        "output": "str",
+        "x": 420,
+        "y": 140,
+        "wires": [
+            [
+                "e186bbc294b581db"
+            ]
+        ]
+    },
+    {
+        "id": "e186bbc294b581db",
+        "type": "MSSQL",
+        "z": "48e13534de6b8f6e",
+        "mssqlCN": "939330b975a616ea",
+        "name": "",
+        "query": "",
+        "outField": "payload",
+        "x": 640,
+        "y": 140,
+        "wires": [
+            [
+                "9475039c5fb1411b"
+            ]
+        ]
+    },
+    {
+        "id": "31c212a7efba94d0",
+        "type": "template",
+        "z": "48e13534de6b8f6e",
+        "name": "Location2Query",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "SELECT COUNT(RegisterDate) \nFROM TrafficCount\nWHERE CONVERT(VARCHAR(25), RegisterDate, 126) LIKE '{{payload}}%' AND LocationID = 2;",
+        "output": "str",
+        "x": 420,
+        "y": 320,
+        "wires": [
+            [
+                "8597047c491c3d0e"
+            ]
+        ]
+    },
+    {
+        "id": "70a5e098895880cb",
+        "type": "join",
+        "z": "48e13534de6b8f6e",
+        "name": "",
+        "mode": "custom",
+        "build": "string",
+        "property": "count",
+        "propertyType": "msg",
+        "key": "count",
+        "joiner": ",",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 1270,
+        "y": 240,
+        "wires": [
+            [
+                "aaa39f5fdf4b350a"
+            ]
+        ]
+    },
+    {
+        "id": "9475039c5fb1411b",
+        "type": "split",
+        "z": "48e13534de6b8f6e",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 870,
+        "y": 140,
+        "wires": [
+            [
+                "b3b008b56af8d43f"
+            ]
+        ]
+    },
+    {
+        "id": "b3b008b56af8d43f",
+        "type": "function",
+        "z": "48e13534de6b8f6e",
+        "name": "",
+        "func": "const location = msg.payload;\nconst count = Object.values(location);\nconst tied = new Object();\ntied.count = count[0];\nmsg.payload = tied;\nreturn msg.payload;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 140,
+        "wires": [
+            [
+                "70a5e098895880cb"
+            ]
+        ]
+    },
+    {
+        "id": "310e15b23623ec69",
+        "type": "split",
+        "z": "48e13534de6b8f6e",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 970,
+        "y": 320,
+        "wires": [
+            [
+                "a2e115a86232c76a"
+            ]
+        ]
+    },
+    {
+        "id": "a2e115a86232c76a",
+        "type": "function",
+        "z": "48e13534de6b8f6e",
+        "name": "",
+        "func": "const location = msg.payload;\nconst count = Object.values(location);\nconst tied = new Object();\ntied.count = count[0];\nmsg.payload = tied;\nreturn msg.payload;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 320,
+        "wires": [
+            [
+                "70a5e098895880cb"
+            ]
+        ]
+    },
+    {
+        "id": "906ef3102b096591",
+        "type": "change",
+        "z": "48e13534de6b8f6e",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "count",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 240,
+        "wires": [
+            [
+                "70a5e098895880cb"
+            ]
+        ]
+    },
+    {
+        "id": "8597047c491c3d0e",
+        "type": "delay",
+        "z": "48e13534de6b8f6e",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 620,
+        "y": 320,
+        "wires": [
+            [
+                "a5a6d2819a2debc4"
+            ]
+        ]
+    },
+    {
+        "id": "aaa39f5fdf4b350a",
+        "type": "function",
+        "z": "48e13534de6b8f6e",
+        "name": "",
+        "func": "const data = msg.count;\nconst dataDivided = data.split(\",\");\nvar toDisplay = new Array([]);\nconst location1 = parseInt(dataDivided[1]);\nconst loaction2 = parseInt(dataDivided[2]);\ntoDisplay = [{\"series\": [\"S Miami Avenue\", \"W Flager St\" ], \"data\": [[location1], [loaction2]], \"labels\": [dataDivided[0]] }];\nmsg.payload = toDisplay;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 520,
+        "wires": [
+            [
+                "2b96f88913b34f41"
+            ]
+        ]
+    },
+    {
+        "id": "2b96f88913b34f41",
+        "type": "ui_chart",
+        "z": "48e13534de6b8f6e",
+        "name": "",
+        "group": "a5e5b6068ae12efb",
+        "order": 0,
+        "width": "6",
+        "height": "7",
+        "label": "Miami | USA",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "D/M",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "3",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1030,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "06d578c6e2e21e47",
+        "type": "serial out",
+        "z": "b88fe837b85bfb15",
+        "name": "",
+        "serial": "4e45931027680cf8",
+        "x": 590,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "914944eef9835c55",
+        "type": "ui_dropdown",
+        "z": "b88fe837b85bfb15",
+        "name": "",
+        "label": "Advertising menu",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "946e5525dc161df7",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": " Drink water!!!",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "Drive safely!!!",
+                "value": "2",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "str",
+        "className": "",
+        "x": 270,
+        "y": 200,
+        "wires": [
+            [
+                "06d578c6e2e21e47"
+            ]
+        ]
+    }
+]

@@ -1,5 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TrafficAdvertising", "TrafficAdvertising", "{C830AE2B-8930-4A87-BB9E-CB14A99AA4AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
