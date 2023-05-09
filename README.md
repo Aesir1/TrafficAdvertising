@@ -27,39 +27,39 @@ This project has the goal of simulating data collection through sensors, persist
 ### Arduino
 The following table contains a list of interfaces that goes connected to the Arduino board.
 
-|Senor/Aktor | Pin | Pin on Arduino|
-|------------|-----|---------------|
-| SR04 | TRIG | 12|
-| SR04 | ECHO | 11|
-| SR501 | PIR | 3|
-| LCD | VSS | Ground|
-| LCD | VDD | 5v|
-| LCD | VO | Potentiometer|
-| LCD | RS | 4|
-| LCD | RW | Ground|
-| LCD | E | 5|
-| LCD | D4 | 6|
-| LCD | D5 | 7|
-| LCD | D6 | 8|
-| LCD | D7 | 9|
-| LCD | A | 5v|
-| LCD | K | Ground|
-| 74HC595 | VCC | 5v|
-| 74HC595 | QA | -|
-| 74HC595 | SER | 2|
-| 74HC595 | OE | Ground|
-| 74HC595 | RCLK | 13|
-| 74HC595 | SRCLK | 10|
-| 74HC595 | SRCLR | 5v|
-| 74HC595 | QH' | -|
-| 74HC595 | QB | To led green|
-| 74HC595 | QC | To led yellow|
-| 74HC595 | QD | To led red|
-| 74HC595 | QE | To led red|
-| 74HC595 | QF | To led yellow|
-| 74HC595 | QG | To led green|
-| 74HC595 | QH | -|
-| 74HC595 | Ground | Ground|
+| Sensor/Aktor | Pin | Pin on Arduino|
+|--------------|-----|---------------|
+| SR04         | TRIG | 12|
+| SR04         | ECHO | 11|
+| SR501        | PIR | 3|
+| LCD          | VSS | Ground|
+| LCD          | VDD | 5v|
+| LCD          | VO | Potentiometer|
+| LCD          | RS | 4|
+| LCD          | RW | Ground|
+| LCD          | E | 5|
+| LCD          | D4 | 6|
+| LCD          | D5 | 7|
+| LCD          | D6 | 8|
+| LCD          | D7 | 9|
+| LCD          | A | 5v|
+| LCD          | K | Ground|
+| 74HC595      | VCC | 5v|
+| 74HC595      | QA | -|
+| 74HC595      | SER | 2|
+| 74HC595      | OE | Ground|
+| 74HC595      | RCLK | 13|
+| 74HC595      | SRCLK | 10|
+| 74HC595      | SRCLR | 5v|
+| 74HC595      | QH' | -|
+| 74HC595      | QB | To led green|
+| 74HC595      | QC | To led yellow|
+| 74HC595      | QD | To led red|
+| 74HC595      | QE | To led red|
+| 74HC595      | QF | To led yellow|
+| 74HC595      | QG | To led green|
+| 74HC595      | QH | -|
+| 74HC595      | Ground | Ground|
 
 ### Node-Red
 All Node-Red data is inside "flows node red.json" you might need to change the user and password for db connection.
@@ -73,4 +73,4 @@ Database related data could be found inside "TrafficAdvertising.sql"
 Please notice you need to create a db user and password or could use the other auth process. 
 
 ## Media and related data
-Photos related to the project could be found inside "Media folder"
+Photos related to project could be found inside "Media" folder

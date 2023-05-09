@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47328e8e-93d5-40f5-8a63-23b3f79d0e78" name="Changes" comment="add: media files">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TrafficAdvertising.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrafficAdvertising.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="47328e8e-93d5-40f5-8a63-23b3f79d0e78" name="Changes" comment="documentation sucks" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683626211446</updated>
-      <workItem from="1683626216944" duration="4476000" />
+      <workItem from="1683626216944" duration="5146000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1683626582057</created>
@@ -86,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683628039870</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="documentation sucks">
+      <created>1683631396073</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683631396073</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +116,7 @@
     <MESSAGE value="add: arduino pin connection with sensor.." />
     <MESSAGE value="feat: project description" />
     <MESSAGE value="add: media files" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: media files" />
+    <MESSAGE value="documentation sucks" />
+    <option name="LAST_COMMIT_MESSAGE" value="documentation sucks" />
   </component>
 </project>
