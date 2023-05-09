@@ -13,7 +13,7 @@ This project has the goal of simulating data collection through sensors, persist
     - HC-SR04 Ulrasonic Sensor
     - 74HC595 16 pin 
     - Leds (2-green, 2 yellow, 2 red)
-    - 6 Resistors
+    - 6 Resistors (220 Ohm)
     - Potentiometer (1)
     - wires (M-M, F-M)
     - Computer
